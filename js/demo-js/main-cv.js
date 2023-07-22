@@ -1025,25 +1025,29 @@
 })(jQuery);
 
 function sendMail() {
-    let params = {
-        name: document.getElementById('name').value,
-        subject: document.getElementById('subject').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value,
-    }
+    if (typeof emailjs !== 'undefined') {
+        let params = {
+            name: document.getElementById('name').value,
+            subject: document.getElementById('subject').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value,
+        }
 
-    const serviceID = 'service_cl89amb';
-    const templateID = 'template_4rlv5h6';
-    emailjs
-        .send(serviceID, templateID, params)
-        .then((res) => {
-            document.getElementById('name').value = '';
-            document.getElementById('subject').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('message').value = '';
-            console.log(res)
-            notificationPopup('Message Sent🥳')
-        }).catch(() => {
-            notificationPopup('message didn\'t sent sorry😭')
-        })
+        const serviceID = 'service_cl89amb';
+        const templateID = 'template_4rlv5h6';
+        emailjs
+            .send(serviceID, templateID, params)
+            .then((res) => {
+                document.getElementById('name').value = '';
+                document.getElementById('subject').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+                console.log(res)
+                notificationPopup('Message Sent🥳')
+            }).catch(() => {
+                notificationPopup('Message didn\'t send, sorry😭')
+            });
+    } else {
+        console.error('emailjs is not defined. Make sure the library is loaded properly.');
+    }
 }

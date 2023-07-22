@@ -1047,8 +1047,3 @@ function sendMail() {
             notificationPopup('message didn\'t sent sorry😭')
         })
 }
-
-// sendButton.onclick = function () {
-//     e.prevetDefault();
-//     sendMail
-// }

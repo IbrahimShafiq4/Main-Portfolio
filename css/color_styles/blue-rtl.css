@@ -5472,6 +5472,7 @@ button {
 .interest-content .content .interest-holder .interest-image {
     padding: 0;
     box-shadow: 0px 0px 1px 0px rgba(88, 78, 78, 0.43);
+    background-size: contain;
 }
 .interest-content .content .interest-holder .interest-image .caption {
     background: #fff;

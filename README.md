@@ -17,7 +17,27 @@ myPortfolio offers a comprehensive insight into my journey as a web developer an
 Explore a curated selection of my projects, each demonstrating a unique blend of creativity and technical expertise. From captivating websites to intuitive web applications, these projects exemplify my commitment to excellence in web development.
 
 ## Skills
-Discover the diverse skill set that powers my journey as a web developer. From HTML and CSS for crafting stunning user interfaces to JavaScript and jQuery for adding interactivity, I leverage a range of technologies to bring my ideas to life.
+### Programming Languages:
+- C++
+- JavaScript
+- TypeScript
+
+### Frontend Development:
+- HTML/HTML5
+- CSS/CSS3
+- Bootstrap
+- AJAX
+- ES6
+- jQuery
+- Angular
+- Regular Expression
+- SCSS
+
+### Software Engineering:
+- Object-Oriented Programming (OOP)
+- Algorithm
+- Data Structure
+- Git and GitHub
 
 ## Experience
 Delve into my professional experience and gain insights into my journey as a web developer. From freelance projects to collaborative ventures, each experience has contributed to my growth and proficiency in the field of web development.

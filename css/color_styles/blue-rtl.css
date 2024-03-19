@@ -56,12 +56,29 @@ VERSION :	2.0
                               BODY & CONTAINER
 ------------------------------------------------------------------------------*/
 
-a, button, a:is(*), button:is(*), i, i:is(*), li, li:is(*) {
-    cursor: url('../../img/icons/pointer.png'),auto!important;
+a,
+button,
+a:is(*),
+button:is(*),
+i,
+i:is(*),
+li,
+li:is(*) {
+    cursor: url("../../img/icons/pointer.png"), auto !important;
 }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"], 
-a, button, a:is(*), button:is(*), i, i:is(*), li, li:is(*) {
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a,
+button,
+a:is(*),
+button:is(*),
+i,
+i:is(*),
+li,
+li:is(*) {
     -webkit-appearance: button;
     cursor: pointer;
 }
@@ -2802,7 +2819,7 @@ button {
     /* display: block; */
     /* max-width: 100%; */
     /* height: auto; */
-    width: 100px;;
+    width: 100px;
     height: 100px;
     object-fit: cover;
     box-shadow: 0px 0px 1px 0px rgba(88, 78, 78, 0.43);
@@ -8292,6 +8309,17 @@ button {
     display: block;
 }
 
+@media (min-width: 992px) {
+    .desktop .gallery-grid figure {
+        height: 144.531px !important;
+    
+        img {
+            height: 100% !important;
+            object-fit: cover;
+        }
+    }
+}
+
 /*-----------------------------------------------------------------------------
                               PORTFOLIO SECTIONS
 -----------------------------------------------------------------------------*/
@@ -11549,6 +11577,6 @@ button {
 /*# sourceMappingURL=application.css.map */
 * {
     font-family: "Courier New", Courier, monospace !important;
-    
-    cursor: url('../../img/icons/mouse.png'), auto;
+
+    cursor: url("../../img/icons/mouse.png"), auto;
 }
